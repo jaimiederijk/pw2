@@ -26,7 +26,6 @@ Ik heb toen een twitter account gemaakt en die gebruikt voor de sign up. Vreemd 
 
 Na signup vraagt bundlin om een email adress voor password recovery. Maar dat gaat toch via twitter?
 
-[comment]: <> (app.js r 4305)
 
 ### profilebar
 ![Alt text](/bundlinbugs/profile.png)
@@ -58,7 +57,6 @@ Als de gebruiker na deze waarschuwing dezelfde foto probeert te uploaden dan geb
 Je krijgt suggesties voor cover foto's aan de hand van de tags die je invoert maar deze suggesties komen maar met een tegelijk binnen en zijn erg langzaam. Het zou beter zijn om meerdere plaatjes te laten zien of in iedergeval de volgende suggestie alvast in te laden. Dus nadat het huidige plaatje is ingeladen meteen de volgende klaarzetten en niet tonen. Dit heeft wel als gevolg dat er meer data verbruik is dus dit zou niet op mobiel moeten plaatsvinden. 
 
 
-[comment]: <> (app.js r 828)
 
 ### Bundle tags
 
@@ -73,10 +71,6 @@ Bundles worden alleen ingeladen door het scrollen van de muis. Dus niet wanneer 
 110 requests
 ## timeline
 ![Alt text](/bundlinstart/3g.bundlin.com.timeline.png)
-
-### Webfonts
-google fontloader
-
 
 
 ### Kleinere Images
