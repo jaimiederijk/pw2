@@ -85,9 +85,9 @@ Bundles worden alleen ingeladen door het scrollen van de muis. Dus niet wanneer 
 Grunt imagemin levert 50kb
 
 ### Nutteloze gif van bijna 1mb
-![Alt text](/bundlinbug/ill-be-back.gif)
+![Alt text](/bundlinbugs/ill-be-back.gif)
 Deze gif voegt niet veel toe behalve meer om te downloaden. Verwijderen zou goed zijn.
 
 ### Inloggen via twitter 
 Na het Inloggen via twitter worden animaties afgespeeld op content die niet veranderd. Bundles komen inwaaien terwijl ze niet weg zijn geweest. Mijn advies zou hier zijn om alleen nieuwe content te animeren. 
-![Alt text](/bundlinbug/twitter.png)
+![Alt text](/bundlinbugs/twitter.png)
