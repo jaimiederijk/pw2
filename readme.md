@@ -65,7 +65,6 @@ Als de gebruiker na deze waarschuwing dezelfde foto probeert te uploaden dan geb
 Je krijgt suggesties voor cover foto's aan de hand van de tags die je invoert maar deze suggesties komen maar met een tegelijk binnen en zijn erg langzaam. Het zou beter zijn om meerdere plaatjes te laten zien of in iedergeval de volgende suggestie alvast in te laden. Dus nadat het huidige plaatje is ingeladen meteen de volgende klaarzetten en niet tonen. Dit heeft wel als gevolg dat er meer data verbruik is dus dit zou niet op mobiel moeten plaatsvinden. 
 
 
-
 ### Bundle tags
 
 Als er maar een tag is dan kan deze niet verwijderd worden. Visuel verdwijnt hij wel maar als de pagina herlaad wordt verschijnt hij opnieuw. In de console verschijnen dan ook errors.
@@ -74,12 +73,18 @@ Als er maar een tag is dan kan deze niet verwijderd worden. Visuel verdwijnt hij
 
 Bundles worden alleen ingeladen door het scrollen van de muis. Dus niet wanneer de scrolbalk op een andere manier op het einde komt zoals bijvoorbeeld via de pijltoetsen. Dit kan worden opgelost door te kijken naar de scrolbalk en niet naar de muis scroll of beter nog doormiddel van pagination door de content heengaan. 
 
+### Mappen structuur
+Voor programmeurs die werken in dit project is het al snel onduidelijk waar ze elementen van de website kunnen vinden. Ik mis duidelijke naamgevingen voor elementen. Een oplossing zou zijn om de [Scalable code organization in AngularJS](https://medium.com/opinionated-angularjs/scalable-code-organization-in-angularjs-9f01b594bf06#.86rijgt3o) te volgen. Elke feature krijgt zijn eigen module die zich weer bevindt in een opzichzelf staande folder met eigen routing, templates en styles. Een van de gevolgen is dan dat mensen zoals ik die bugs aan het zoeken zijn meer vertrouwen krijgen in het maken van een fix. De gevolgen zijn beter te overzien.
+
+
 ## Performance 
 
 110 requests
 ## timeline
 ![Alt text](/bundlinstart/3g.bundlin.com.timeline.png)
 
+### Gzip toepassen
+Maakt de bestanden nog kleiner
 
 ### Kleinere Images
 Grunt imagemin levert 50kb
@@ -91,3 +96,6 @@ Deze gif voegt niet veel toe behalve meer om te downloaden. Verwijderen zou goed
 ### Inloggen via twitter 
 Na het Inloggen via twitter worden animaties afgespeeld op content die niet veranderd. Bundles komen inwaaien terwijl ze niet weg zijn geweest. Mijn advies zou hier zijn om alleen nieuwe content te animeren. 
 ![Alt text](/bundlinbugs/twitter.png)
+
+### Performance op mobiel in de trein
+Ik heb een tijdje lopen testen in de trein. En de performance viel best mee. Er waren veel laad balkjes maar die waren wel goed voor de tijd die het kost om te laden. 
