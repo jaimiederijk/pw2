@@ -45,7 +45,7 @@ lege plekken voor info die de gebruiker niet heeft ingevuld. Het is beter om dez
 
 ### new bundle
 
-Zodra je op new bundle klik wordt er meteen een nieuwe bundle aangemaakt. Het lijkt mij beter om deze pas aan te maken als er iets geedit is in de bundle. Dan heeft een gebruiker zoals ik die een beetje aan het verkennen is niet meteen drie lege bundles.
+Zodra je op new bundle klikt wordt er meteen een nieuwe bundle aangemaakt. Het lijkt mij beter om deze pas aan te maken als er iets geedit is in de bundle. Dan heeft een gebruiker zoals ik die een beetje aan het verkennen is niet meteen drie lege bundles.
 
 Op mobiel is maken en editen van bundles nog niet beschikbaar maar de knop maakt nog wel steeds een nieuwe bundle aan. 
 De terug knop die hier op het scherm staat lijd vervolgens naar deze nieuw gemaakte bundle. Dit wordt niet verwacht en zou ook echt als terugknop moeten werken.
@@ -98,4 +98,7 @@ Na het Inloggen via twitter worden animaties afgespeeld op content die niet vera
 ![Alt text](/bundlinbugs/twitter.png)
 
 ### Performance op mobiel in de trein
-Ik heb een tijdje lopen testen in de trein. En de performance viel best mee. Er waren veel laad balkjes maar die waren wel goed voor de tijd die het kost om te laden. 
+Ik heb een tijdje lopen testen in de trein. En de performance viel best mee. Er waren veel laad balkjes maar die waren wel goed voor de tijd die het kost om te laden. De laadtijden zijn net meer dan twee sec.
+
+### Maak sprites 
+Maak sprites van de groepen foto's. Bijvoorbeeld de foto's van het lively dev team. Dit kan via een grunt plugin [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
