@@ -6,12 +6,20 @@ The beauty of the web, bundled.
 
 ### Niet duidelijk waar focus ligt
 
-Oplossing is weer een outline toevoegen aan links en buttons.
+Ongebruiks vriendelijk voor de toetsenbordgebruikers.
+Oplossing is weer een outline toevoegen aan links en buttons die is nu verwijderd met outline:none.
 
-Ook loopt de focus door niet zichtbare elementen zoals de video speler.
+Ook loopt de focus door niet zichtbare elementen zoals de video speler. Niet zichtbare elementen zouden moeten worden opgevangen met een display:none. Dan worden ze niet gefocust en leest een screenreader ze ook niet. 
 
 ### Semantische HTML
-Voor meer structuur en duidelijkheid ten behoeve van screenreaders
+Voor meer structuur en duidelijkheid ten behoeve van screenreaders. Er wordt een grote hoeveelheid divs gebruikt op plekken waar het niet handig is. Zoals onderstaande div die eigenlijk een button zou moeten zijn.
+```
+<div class="playbutton bln-button bln-button-invert bln-button-stop" ng-click="stopVideo()" ng-show="playvideo">
+  <span class="bln-icon bln-icon-stop-button"></span>
+  Stop video
+</div>
+```
+
 
 ### login
 
@@ -74,4 +82,12 @@ Bundles worden alleen ingeladen door het scrollen van de muis. Dus niet wanneer 
 
 
 ### Kleinere Images
-grunt imagemin levert 50kb
+Grunt imagemin levert 50kb
+
+### Nutteloze gif van bijna 1mb
+![Alt text](/bundlinbug/ill-be-back.gif)
+Deze gif voegt niet veel toe behalve meer om te downloaden. Verwijderen zou goed zijn.
+
+### Inloggen via twitter 
+Na het Inloggen via twitter worden animaties afgespeeld op content die niet veranderd. Bundles komen inwaaien terwijl ze niet weg zijn geweest. Mijn advies zou hier zijn om alleen nieuwe content te animeren. 
+![Alt text](/bundlinbug/twitter.png)
